@@ -12,7 +12,7 @@ public class CountingLetters {
         userString = keyboard.nextLine();
         
         for (int index = 0; index < userString.length(); index++) {
-            if (userString.charAt(index) == 'e' || userString.charAt(index) == 'E') {
+            if (Character.toLowerCase(userString.charAt(index)) == 'e') {
                 count++;
             }
         }
